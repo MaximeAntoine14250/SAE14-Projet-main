@@ -1,32 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+a:visited {
+    color: white;
+}
 header {
     font-family: Comfortaa;
-    background-image: url(https://img.freepik.com/photos-gratuite/construisez-votre-propre-force-corporelle_53876-21377.jpg?semt=ais_hybrid);
-    
+    background-image: url("../images/header4.jpg");
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
 }
-
 
 header nav {
     display: flex;
-    justify-content: center;
+    gap: 80px; /* espace entre les elt */
+    padding-left: 37.5%;
+    flex: 2;
+    /*background: pink;*/
+    
+}
+
+header div {
+    display: flex;
     padding: 20px;
     gap: 80px;
-    
-    
+    flex: 1;
+    /*background: green;*/
+    justify-content: right;
 }
-header nav a {
-    color: #ffffff; /* Définit la couleur du lien à blanc */
-    text-decoration: none; /* Enlève le soulignement */
-}
-
-header nav a i {
+body header h1 {
+    /*background: red;*/
     display: flex;
-    justify-content: end;
-    padding: 20px;
-    gap: 10px;
-
-}
+    padding: 180px;
+    text-align: center;
+    padding-left: 37.5%;
 
 
-main {
     
 }
+
+
+
+body main h1 {
+    background: yellow;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
