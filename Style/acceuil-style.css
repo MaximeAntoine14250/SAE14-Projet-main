@@ -9,7 +9,6 @@ a:visited {
 }
 header {
     font-family: Comfortaa;
-    /*background-color: grey;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +25,9 @@ header {
     flex: 2;
     padding-top: 1%;
     padding-bottom: 1%;
-    background: rgba(0, 0, 0, 0.459);
+    background: rgba(201, 40, 40, 0.459);
     font-size: 25px;
     margin-left: 0;
-
     
 }
 
@@ -37,11 +35,9 @@ header {
     display: flex;
     gap: 40px;
     flex: 1;
-    /*background: green;*/
+    /*background: rgb(86, 10, 148);*/
     justify-content: right;
-    color: green;
-    padding-right: 5%;
-
+    padding-right: 1%;
 
 }
 
@@ -51,7 +47,7 @@ header {
     flex: 1;
     /*background: green;*/
     color: green;
-    padding-left: 5%;
+    padding-left: 1%;
 }
 
 #header_image  {
@@ -61,6 +57,7 @@ header {
     height: 100vh;
     background-image: url(../images/header8.jpg);
     background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -70,13 +67,49 @@ body header h1 {
     padding: 350px;
     text-align: center;
     font-size: 80px;
+    
 }
 
 
+/* Main ------------------------------*/
 
-body main h1 {
-    background: yellow;
-    justify-content: flex-start;
-    margin: 20px;
+body main div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: rgb(47, 161, 123);
 }
 
+#p1_main1 {
+    display: flex;
+    background-color: rgb(172, 17, 94);
+    
+}
+
+#main_img1 {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../images/main1.jpg);
+}
+
+#p2_main2 {
+    display: flex;
+    /*background-color: red;*/
+}
+
+#main_img2 {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../images/main2.jpg);
+}
+
+#p3_main3 {
+    display: flex;
+    
+}
+
+#main_img3 {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../images/main3.jpg);
+}
