@@ -8,7 +8,7 @@ a:visited {
     color: white;
 }
 header {
-    font-family: Comfortaa;
+    font-family: Sour+Gummy;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ header {
     flex: 2;
     padding-top: 1%;
     padding-bottom: 1%;
-    background: rgba(201, 40, 40, 0.459);
+    background: rgba(209, 207, 207, 0.774);
     font-size: 25px;
     margin-left: 0;
     
@@ -70,46 +70,100 @@ body header h1 {
     
 }
 
-
-/* Main ------------------------------*/
+/* Main 1 ------------------------------*/
 
 body main div {
     display: flex;
-    gap: 20px;
     justify-content: space-around;
-    background-color: rgb(47, 161, 123);
+    /*background-color: rgb(47, 161, 123);*/
+    background-color: rgba(95, 93, 93, 0.589);
+    font-family: Sour+Gummy;
+    align-items: center;
+    padding-top: 20px;
 }
 
-#p1_main1 {
+#main_div1 {
     display: flex;
-    background-color: rgb(172, 17, 94);
+    flex-direction: column;
+    background: rgba(216, 214, 214, 0.774);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size:x-large;
+    text-align: center;
+    width: 65vh;
+    height: 30vw;
+    color: rgb(0, 0, 0);
     
 }
-
-#main_img1 {
-    width: 20vw;
-    height: 20vh;
-    background-image: url(../images/main1.jpg);
+#p1_main1_1 {
+    display: flex;    
+    /*background-color: aqua;*/
+    text-align: center;
 }
 
-#p2_main2 {
+#main_div_av_img {
+    display: flex;
+    height: 20vw;
+    width: 60vh;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    align-items: center;
+    color: azure;
+}
+
+#p2_main1_2 {
     display: flex;
     /*background-color: red;*/
+    text-align: center;
 }
 
-#main_img2 {
-    width: 20vw;
-    height: 20vh;
-    background-image: url(../images/main2.jpg);
-}
-
-#p3_main3 {
+#p3_main1_3 {
     display: flex;
+    /*background-color: rgb(26, 11, 156);*/
     
 }
 
-#main_img3 {
-    width: 20vw;
-    height: 20vh;
-    background-image: url(../images/main3.jpg);
+/* Main 2 ------------------------------*/
+#main_div2 {
+    display: flex;
+    flex-direction: column;
+    background: rgba(68, 62, 62, 0.774);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size:x-large;
+    text-align: center;
+    width: 65vh;
+    height: 30vw;
+    color: rgb(255, 255, 255);
+    
+}
+
+#p1_main2_3 {
+    display: flex;    
+    /*background-color: aqua;*/
+    text-align: center;
+}
+
+#main_div_av_img {
+    display: flex;
+    height: 20vw;
+    width: 60vh;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+#p2_main2_2 {
+    display: flex;
+    /*background-color: red;*/
+    text-align: center;
+}
+
+#p3_main2_3 {
+    display: flex;
+    /*background-color: rgb(26, 11, 156);*/
+    
 }
