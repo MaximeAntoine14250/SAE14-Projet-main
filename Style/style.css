@@ -8,7 +8,6 @@ a:visited {
     color: white;
 }
 
-
 /* Header -----------------------------------------------------------------------------------------------*/
 
 header {
@@ -65,6 +64,15 @@ header {
     
 }
 
+#header_image_guide  {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(95, 93, 93, 0.589);
+    
+}
+
+
 body header h1 {
     /*background: red;*/
     display: flex;
@@ -118,6 +126,13 @@ body header div a span {
     
 }
 
+#section_img{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    border-radius: 35%;
+}
+
 #main_section {
     display: flex;
     flex-direction: column;
@@ -164,7 +179,6 @@ main section section p span {
 #main_div1 {
     display: flex;
     flex-direction: column;
-    background-color: rgba(216, 214, 214, 0.774);
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -209,7 +223,6 @@ main section section p span {
 #main_div2 {
     display: flex;
     flex-direction: column;
-    background-color: rgba(68, 62, 62, 0.774);
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
