@@ -9,6 +9,8 @@
     /* Inclut la bordure et le padding dans la largeur et la hauteur des éléments */
     text-decoration: none;
     /* Enlève les soulignements des liens */
+    font-family: "EB Garamond", serif;
+    
 }
 
 /* Liens visités : ---------------------------------------------------------------*/
@@ -21,7 +23,8 @@ a:visited {
 /*-------------------------------------------------------------------------------------------------------*/
 
 header {
-    font-family: "EB Garamond", serif;
+
+    font-family: "Permanent Marker", cursive;
     font-weight: 400;
     display: flex;
     /* Utilisation de Flexbox pour disposer les éléments de l'en-tête en ligne */
@@ -39,6 +42,7 @@ header {
 /* Bar de Navigation ------------------------------------------------------------------------------------*/
 
 #nav {
+    border-bottom: 2px solid rgba(184, 134, 11);  /* Bordure bleue de 4px */
     display: flex;
     /* Utilisation de Flexbox pour la barre de navigation */
     position: fixed;
@@ -98,11 +102,6 @@ header {
 #header_image_acceuil {
     height: 100vh;
     /* Définit la hauteur de l'image d'en-tête à 100% de la hauteur de la fenêtre */
-    background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.568), rgb(0, 0, 0)),
-        /* Ajoute un dégradé noir transparent sur l'image */
-        url('../images/header8.jpg');
-    /* Image d'arrière-plan */
     width: 100%;
     /* L'image couvre toute la largeur */
     background-position: center;
@@ -143,7 +142,9 @@ header {
     /* Organise les éléments en colonne */
     color: white;
     /* Définit la couleur du texte en blanc */
+    
 }
+
 
 /* Sections pour les titres de page spécifiques : -------------------------------------------------------*/
 
@@ -156,6 +157,7 @@ header {
     /* Taille de la police définie à 80px */
     flex-direction: column;
     /* Organise les éléments en colonne */
+    font-family: "Permanent Marker", cursive;
 
 }
 
@@ -163,8 +165,6 @@ header {
     font-size: 20px;
     /* Taille de la police définie à 80px */
 }
-
-
 
 /* Main ****************************************************************************************************/
 
@@ -176,14 +176,15 @@ header {
     /* Organise les éléments en ligne */
     width: 90%;
     /* Largeur de la section à 100% */
-    height: 90%;
+    height: 80%;
     /* Hauteur de la section à 100% */
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(255, 255, 255, 0.103);
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
+
 
 #section_base {
     display: flex;
@@ -200,6 +201,24 @@ header {
     margin-right: 5%;
 }
 
+#section1_a_propos {
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des éléments dans la section */
+    flex-direction: row;
+    justify-content: space-around;
+    /* Organise les éléments en ligne */
+    width: 90%;
+    /* Largeur de la section à 100% */
+    height: 80%;
+    /* Hauteur de la section à 100% */
+    background-color:rgba(255, 255, 255, 0.103);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+}
+
 #section_video {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments dans la section */
@@ -210,6 +229,28 @@ header {
 }
 
 #main_section_1 {
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des éléments */
+    flex-direction: column;
+    /* Organise les éléments en colonne */
+    width: 60%;
+    /* La section prend 60% de la largeur */
+    height: 100%;
+    /* La section prend 80% de la hauteur */
+    /* Marge de 5% en haut */
+    padding-top: 2%;
+    /* Padding de 5% en haut */
+    font-size: x-large;
+    /* Taille de police large */
+    text-align: left;
+    /* Alignement du texte à gauche */
+    color: rgb(255, 255, 255);
+    /* Texte en blanc */
+ 
+}
+
+
+#main_section_2 {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
     flex-direction: column;
@@ -246,7 +287,7 @@ header {
     /* Fond sombre pour la section */
     margin-left: 5%;
     margin-right: 5%;  
-    
+
 }
     
 
@@ -343,7 +384,7 @@ header {
     /* Hauteur de la section du titre à 10% de la fenêtre */
     padding-left: 20px;
     /* Padding de 20px à gauche */
-    border: 2px solid rgba(241, 179, 21, 0.87); /* Bordure dorée avec style solid */
+    border: 2px solid rgba(184, 134, 11); /* Bordure dorée avec style solid */
     background-color: rgba(0, 0, 0, 0.658);
     margin-left: 5%;
     margin-right: 5%;
@@ -359,6 +400,10 @@ header {
     margin-bottom: 2%;
 
 }
+
+
+
+
 
 /* Mise en forme des éléments du corps : ------------------------------------------------------------*/
 
@@ -378,26 +423,28 @@ body main div {
 /* Colorisation des spans dans les titres et les paragraphes : -----------------------------------------*/
 
 body header h1 span {
-    color: rgba(241, 179, 21, 0.87);
+    color: rgba(184, 134, 11);
     /* Couleur dorée pour les éléments span dans les titres */
+    font-family: "Permanent Marker", cursive;
+    
 }
 
 body header div a span {
-    color: rgb(206, 151, 12);
+    color: rgba(184, 134, 11);
     /* Couleur dorée pour les éléments span dans les liens */
 }
 
 main section section p span {
-    color: rgb(173, 128, 13);
+    color: rgba(184, 134, 11);
     /* Couleur dorée pour les éléments span dans les paragraphes */
 }
 
 
-body {
+#body_guide {
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568), rgb(0, 0, 0)),
         /* Ajoute un dégradé noir transparent sur l'image */
-        url('../images/header9.jpg');
+        url('images/header9.jpg');
 
     background-position: center;
     /* Positionne l'image au centre */
@@ -406,4 +453,29 @@ body {
 
 #body_section_h1 {
     padding-left: 2%;
+}
+
+#body_acc {
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568), rgb(0, 0, 0)),
+        /* Ajoute un dégradé noir transparent sur l'image */
+        url('images/header8.jpg');
+
+    background-position: center;
+    /* Positionne l'image au centre */
+    background-attachment: fixed; /* Rend l'image fixe */
+}
+
+#body_a_propos {
+
+
+    background:
+            linear-gradient(to bottom,rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.486), rgb(0, 0, 0)),
+            /* Ajoute un dégradé noir transparent sur l'image */
+            url('images/header.jpg');
+
+        background-position: center;
+        /* Positionne l'image au centre */
+        background-attachment: fixed; /* Rend l'image fixe */
+
 }
