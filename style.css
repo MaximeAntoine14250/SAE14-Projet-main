@@ -300,7 +300,20 @@ header {
 
 /* Div avec images : ------------------------------------------------------------------------------------*/
 
-
+#main_div0_av_img {
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des images */
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image d'arrière-plan */
+    height: 90%;
+    /* Hauteur de l'image fixée à 80% */
+    width: 100%;
+    /* Largeur de l'image fixée à 90% */
+    margin-top: 10%;
+    /* Marge de 20% en haut */
+    margin-left: 2%;
+    padding-bottom: 5%;
+}
 
 #main_div0_av_img2 {
     display: flex;
@@ -373,7 +386,7 @@ header {
     /* Padding de 20px à gauche */
     border: 2px solid rgba(184, 134, 11);
     /* Bordure dorée avec style solid */
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgb(0, 0, 0);
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
@@ -470,6 +483,7 @@ main section section p span {
 
 
 @media (max-width: 426px) {
+
     #section_base_acc {
         height: 100%;
         /*la section prend 80% de la hauteur totale*/
@@ -482,7 +496,7 @@ main section section p span {
     }
 
     #section_base {
-        height: 50%;
+        height: 100%;
         /*la section prend 60% de la hauteur totale*/
         padding-top: 1%;
         /*espace entre la section et le haut de la page*/
@@ -490,19 +504,12 @@ main section section p span {
         /*espace entre la section et la gauche de la page*/
         padding-right: 1%;
         /*espace entre la section et la droite de la page*/
-
+    
     }
 
     #main_p {
-      
-        /*augmente la hauteur de ligne pour améliorer la lisibilité */
         font-size: 20px;
     }
-
-
-
-
-    
 }
 
 @media (max-width: 768px) {
@@ -545,7 +552,7 @@ main section section p span {
     }
 
     #section_base_acc {
-        height: 50%;
+        height: 70%;
         /*la section prend 80% de la hauteur totale*/
         padding-top: 1%;
         /*espace entre la section et le haut de la page*/
@@ -556,7 +563,7 @@ main section section p span {
     }
 
     #section_base {
-        height: 50%;
+        height: 45%;
         /*la section prend 60% de la hauteur totale*/
         padding-top: 1%;
         /*espace entre la section et le haut de la page*/
@@ -591,10 +598,11 @@ main section section p span {
     }
 
   
-    #main_div0_av_img {
+    #main_div_av_img {
         display: none;
         /*ne pas afficher l'image */
     }
+    
 
     #main_p {
         line-height: 120%;
@@ -609,34 +617,3 @@ main section section p span {
 
 
 
-
-
-
-
-
-
-@media (max-width: 1024px) {
-
-
-
-
-}
-
-
-
-
-@media (min-width: 1024px) {
-    #main_div0_av_img {
-        display: flex;
-        /* Utilisation de Flexbox pour la disposition des images */
-        background-repeat: no-repeat;
-        /* Empêche la répétition de l'image d'arrière-plan */
-        height: 95%;
-        /* Hauteur de l'image fixée à 80% */
-        width: 100%;
-        /* Largeur de l'image fixée à 90% */
-        padding-top: 10%;
-        /* Marge de 0% en haut */
-    }
-
-}
