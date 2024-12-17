@@ -10,7 +10,7 @@
     text-decoration: none;
     /* Enlève les soulignements des liens */
     font-family: "EB Garamond", serif;
-    
+
 }
 
 /* Liens visités : ---------------------------------------------------------------*/
@@ -42,7 +42,8 @@ header {
 /* Bar de Navigation ------------------------------------------------------------------------------------*/
 
 #nav {
-    border-bottom: 2px solid rgba(184, 134, 11);  /* Bordure bleue de 4px */
+    border-bottom: 2px solid rgba(184, 134, 11);
+    /* Bordure bleue de 4px */
     display: flex;
     /* Utilisation de Flexbox pour la barre de navigation */
     position: fixed;
@@ -142,7 +143,7 @@ header {
     /* Organise les éléments en colonne */
     color: white;
     /* Définit la couleur du texte en blanc */
-    
+
 }
 
 
@@ -211,7 +212,7 @@ header {
     /* Largeur de la section à 100% */
     height: 80%;
     /* Hauteur de la section à 100% */
-    background-color:rgba(255, 255, 255, 0.103);
+    background-color: rgba(255, 255, 255, 0.103);
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1%;
@@ -246,9 +247,7 @@ header {
     /* Alignement du texte à gauche */
     color: rgb(255, 255, 255);
     /* Texte en blanc */
- 
 }
-
 
 #main_section_2 {
     display: flex;
@@ -271,7 +270,6 @@ header {
 
 }
 
-
 #main_section_3 {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
@@ -286,10 +284,10 @@ header {
     background-color: rgba(0, 0, 0, 0.658);
     /* Fond sombre pour la section */
     margin-left: 5%;
-    margin-right: 5%;  
+    margin-right: 5%;
 
 }
-    
+
 
 #main_p {
     margin-left: 2%;
@@ -302,18 +300,7 @@ header {
 
 /* Div avec images : ------------------------------------------------------------------------------------*/
 
-#main_div0_av_img {
-    display: flex;
-    /* Utilisation de Flexbox pour la disposition des images */
-    background-repeat: no-repeat;
-    /* Empêche la répétition de l'image d'arrière-plan */
-    height: 95%;
-    /* Hauteur de l'image fixée à 80% */
-    width: 100%;
-    /* Largeur de l'image fixée à 90% */
-    padding-top: 10%;
-    /* Marge de 0% en haut */
-}
+
 
 #main_div0_av_img2 {
     display: flex;
@@ -384,7 +371,8 @@ header {
     /* Hauteur de la section du titre à 10% de la fenêtre */
     padding-left: 20px;
     /* Padding de 20px à gauche */
-    border: 2px solid rgba(184, 134, 11); /* Bordure dorée avec style solid */
+    border: 2px solid rgba(184, 134, 11);
+    /* Bordure dorée avec style solid */
     background-color: rgba(0, 0, 0, 0.658);
     margin-left: 5%;
     margin-right: 5%;
@@ -395,14 +383,11 @@ header {
 }
 
 #title_combat {
-    text-align: center ; 
+    text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
 
 }
-
-
-
 
 
 /* Mise en forme des éléments du corps : ------------------------------------------------------------*/
@@ -416,8 +401,6 @@ body main div {
     /* Police personnalisée */
     align-items: center;
     /* Alignement vertical des éléments au centre */
-    padding-top: 20px;
-    /* Padding de 20px en haut */
 }
 
 /* Colorisation des spans dans les titres et les paragraphes : -----------------------------------------*/
@@ -426,7 +409,7 @@ body header h1 span {
     color: rgba(184, 134, 11);
     /* Couleur dorée pour les éléments span dans les titres */
     font-family: "Permanent Marker", cursive;
-    
+
 }
 
 body header div a span {
@@ -439,7 +422,6 @@ main section section p span {
     /* Couleur dorée pour les éléments span dans les paragraphes */
 }
 
-
 #body_guide {
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568), rgb(0, 0, 0)),
@@ -448,7 +430,8 @@ main section section p span {
 
     background-position: center;
     /* Positionne l'image au centre */
-    background-attachment: fixed; /* Rend l'image fixe */
+    background-attachment: fixed;
+    /* Rend l'image fixe */
 }
 
 #body_section_h1 {
@@ -463,19 +446,197 @@ main section section p span {
 
     background-position: center;
     /* Positionne l'image au centre */
-    background-attachment: fixed; /* Rend l'image fixe */
+    background-attachment: fixed;
+    /* Rend l'image fixe */
 }
 
 #body_a_propos {
 
 
     background:
-            linear-gradient(to bottom,rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.486), rgb(0, 0, 0)),
-            /* Ajoute un dégradé noir transparent sur l'image */
-            url('images/header.jpg');
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.486), rgb(0, 0, 0)),
+        /* Ajoute un dégradé noir transparent sur l'image */
+        url('images/header.jpg');
 
-        background-position: center;
-        /* Positionne l'image au centre */
-        background-attachment: fixed; /* Rend l'image fixe */
+    background-position: center;
+    /* Positionne l'image au centre */
+    background-attachment: fixed;
+    /* Rend l'image fixe */
+
+}
+
+/* Styles pour les petits écrans (mobiles) : ------------------------------------------------------------*/
+/* Pour les écrans larges (ordinateurs de bureau ou tablettes) */
+
+
+@media (max-width: 426px) {
+    #section_base_acc {
+        height: 100%;
+        /*la section prend 80% de la hauteur totale*/
+        padding-top: 1%;
+        /*espace entre la section et le haut de la page*/
+        padding-left: 1%;
+        /*espace entre la section et la gauche de la page*/
+        padding-right: 1%;
+        /*espace entre la section et la droite de la page*/
+    }
+
+    #section_base {
+        height: 50%;
+        /*la section prend 60% de la hauteur totale*/
+        padding-top: 1%;
+        /*espace entre la section et le haut de la page*/
+        padding-left: 1%;
+        /*espace entre la section et la gauche de la page*/
+        padding-right: 1%;
+        /*espace entre la section et la droite de la page*/
+
+    }
+
+    #main_p {
+      
+        /*augmente la hauteur de ligne pour améliorer la lisibilité */
+        font-size: 20px;
+    }
+
+
+
+
+    
+}
+
+@media (max-width: 768px) {
+    #nav {
+        display: flex;
+        flex-direction: column;
+        /*element de navigation en column*/
+        text-align: center;
+        /*texte aligné au centre*/
+        align-items: center;
+        /*element de navigation eu centre*/
+        font-size: 20px;
+        gap: 20px;
+        /*espace entre les liens des pages et les nav*/
+    }
+
+    #lien_site {
+        gap: 20px;
+        /*espace entre les liens des pages*/
+
+    }
+
+    #header_image_acceuil {
+        justify-content: center;
+        /*place le titre de la page au centre*/
+        height: 600px;
+        /*espace entre le top et le texte*/
+    }
+
+    #header_image_guide{
+        justify-content: center;
+        /*place le titre de la page au centre*/
+        height: 600px;
+        /*espace entre le top et le texte*/
+    }
+
+    #body_header_h1 {
+        font-size: 40px;
+        /*taille de la police du titre a 40 px*/
+    }
+
+    #section_base_acc {
+        height: 50%;
+        /*la section prend 80% de la hauteur totale*/
+        padding-top: 1%;
+        /*espace entre la section et le haut de la page*/
+        padding-left: 1%;
+        /*espace entre la section et la gauche de la page*/
+        padding-right: 1%;
+        /*espace entre la section et la droite de la page*/
+    }
+
+    #section_base {
+        height: 50%;
+        /*la section prend 60% de la hauteur totale*/
+        padding-top: 1%;
+        /*espace entre la section et le haut de la page*/
+        padding-left: 1%;
+        /*espace entre la section et la gauche de la page*/
+        padding-right: 1%;
+        /*espace entre la section et la droite de la page*/
+
+    }
+
+    #section_base_a_propos {
+        height: 100%;
+        /*la section prend 100% de la hauteur totale*/
+    }
+
+    #section_vidéo iframe {
+        width: 90%;
+        /* Chaque vidéo occupe toute la largeur de l'écran */
+        height: 100px;
+        /* Hauteur fixe pour chaque vidéo */
+        max-width: 800px;
+        /* Limite la largeur maximale de la vidéo */
+    }
+
+    #main_section_1 {
+        width: 100%;
+    }
+
+    #main_section_2 {
+        width: 100%;
+        /*la section prend 100% de la hauteur totale*/
+    }
+
+  
+    #main_div0_av_img {
+        display: none;
+        /*ne pas afficher l'image */
+    }
+
+    #main_p {
+        line-height: 120%;
+        /*augmente la hauteur de ligne pour améliorer la lisibilité */
+    }
+    #title_combat {
+        font-size: 20px;
+        /*taille des titres a 20px*/
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+    #main_div0_av_img {
+        display: flex;
+        /* Utilisation de Flexbox pour la disposition des images */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image d'arrière-plan */
+        height: 95%;
+        /* Hauteur de l'image fixée à 80% */
+        width: 100%;
+        /* Largeur de l'image fixée à 90% */
+        padding-top: 10%;
+        /* Marge de 0% en haut */
+    }
 
 }
