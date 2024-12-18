@@ -97,7 +97,7 @@ header {
 
 /* Header Image - Accueil ---------------------------------------------------------------------------------*/
 
-#header_image_acceuil {
+#index_header_img {
     height: 100vh;
     /* Définit la hauteur de l'image d'en-tête à 100% de la hauteur de la fenêtre */
     width: 100%;
@@ -120,7 +120,7 @@ header {
 
 /* Header Image - Guide -----------------------------------------------------------------------------------*/
 
-#header_image_guide {
+#guide_header_img {
     height: 100vh;
     /* Définit la hauteur de l'image d'en-tête à 100% de la hauteur de la fenêtre */
     /* Image d'arrière-plan */
@@ -144,9 +144,36 @@ header {
 }
 
 
+#header_sous_titre {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#apropos_header_img{
+    height: 100vh;
+    /* Définit la hauteur de l'image d'en-tête à 100% de la hauteur de la fenêtre */
+    /* Image d'arrière-plan */
+    width: 100%;
+    /* L'image couvre toute la largeur */
+    background-position: center;
+    /* Positionne l'image au centre */
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des éléments */
+    justify-content: center;
+    /* Centre les éléments horizontalement */
+    align-items: center;
+    /* Centre les éléments verticalement */
+    text-align: center;
+    /* Centre le texte */
+    flex-direction: column;
+    /* Organise les éléments en colonne */
+    color: white;
+    /* Définit la couleur du texte en blanc */
+}
+
+
 /* Sections pour les titres de page spécifiques : -------------------------------------------------------*/
 
-#body_header_h1 {
+#header_titre {
     font-family: "Permanent Marker", cursive;
     /*background: red;*/
     /* Commenté, option pour fond rouge */
@@ -166,7 +193,7 @@ header {
 
 /* Main ****************************************************************************************************/
 
-#section_base_acc {
+#index_section {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments dans la section */
     flex-direction: row;
@@ -184,7 +211,7 @@ header {
 }
 
 
-#section_base {
+#guide_section {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments dans la section */
     flex-direction: row;
@@ -209,7 +236,7 @@ header {
     /* Largeur de la section à 100% */
     height: 80%;
     /* Hauteur de la section à 100% */
-    background-color: rgba(255, 255, 255, 0.103);
+    background-color:  rgba(0, 0, 0, 0.658);
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1%;
@@ -226,7 +253,7 @@ header {
     /* Hauteur de la section à 100% */
 }
 
-#main_section_1 {
+#index_section_texte {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
     flex-direction: column;
@@ -246,7 +273,7 @@ header {
     /* Texte en blanc */
 }
 
-#main_section_2 {
+#guide_section_texte {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
     flex-direction: column;
@@ -297,7 +324,7 @@ header {
 
 /* Div avec images : ------------------------------------------------------------------------------------*/
 
-#main_div0_av_img {
+#index_section_img {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des images */
     background-repeat: no-repeat;
@@ -312,7 +339,7 @@ header {
     padding-bottom: 5%;
 }
 
-#main_div0_av_img2 {
+#guide_section_img {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des images */
     background-repeat: no-repeat;
@@ -430,7 +457,7 @@ main section section p span {
     /* Couleur dorée pour les éléments span dans les paragraphes */
 }
 
-#body_guide {
+#guide_body {
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568), rgb(0, 0, 0)),
         /* Ajoute un dégradé noir transparent sur l'image */
@@ -442,11 +469,11 @@ main section section p span {
     /* Rend l'image fixe */
 }
 
-#body_section_h1 {
+#index_section_texte {
     padding-left: 2%;
 }
 
-#body_acc {
+#index_body {
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568), rgb(0, 0, 0)),
         /* Ajoute un dégradé noir transparent sur l'image */
@@ -478,10 +505,31 @@ main section section p span {
 /* Styles pour les petits écrans (mobiles) : ------------------------------------------------------------*/
 /* Pour les écrans larges (ordinateurs de bureau ou tablettes) */
 
+/* Animations */
+
+#social a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Transition douce pour les transformations et les couleurs */
+}
+
+#social a:hover {
+    transform: scale(1.2); /* Augmente la taille de l'icône au survol */
+    color: rgba(184, 134, 11); /* Change la couleur des icônes au survol */
+}
+
+#nav a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Transition douce pour les transformations et les couleurs */
+}
+
+#nav a:hover {
+    transform: scale(1.2); /* Augmente la taille de l'icône au survol */
+}
+
 
 @media (max-width: 426px) {
 
-    #section_base_acc {
+    #index_section {
         height: 100%;
         /*la section prend 80% de la hauteur totale*/
         padding-top: 1%;
@@ -492,7 +540,7 @@ main section section p span {
         /*espace entre la section et la droite de la page*/
     }
 
-    #section_base {
+    #guide_section {
         height: 100%;
         /*la section prend 60% de la hauteur totale*/
         padding-top: 1%;
@@ -529,26 +577,26 @@ main section section p span {
 
     }
 
-    #header_image_acceuil {
+    #index_header_img {
         justify-content: center;
         /*place le titre de la page au centre*/
         height: 600px;
         /*espace entre le top et le texte*/
     }
 
-    #header_image_guide{
+    #guide_header_img {
         justify-content: center;
         /*place le titre de la page au centre*/
         height: 600px;
         /*espace entre le top et le texte*/
     }
 
-    #body_header_h1 {
+    #header_titre {
         font-size: 40px;
         /*taille de la police du titre a 40 px*/
     }
 
-    #section_base_acc {
+    #index_section {
         height: 70%;
         /*la section prend 80% de la hauteur totale*/
         padding-top: 1%;
@@ -559,7 +607,7 @@ main section section p span {
         /*espace entre la section et la droite de la page*/
     }
 
-    #section_base {
+    #guide_section {
         height: 45%;
         /*la section prend 60% de la hauteur totale*/
         padding-top: 1%;
@@ -576,7 +624,7 @@ main section section p span {
         /*la section prend 100% de la hauteur totale*/
     }
 
-    #section_vidéo iframe {
+    #guide_section_vidéo iframe {
         width: 90%;
         /* Chaque vidéo occupe toute la largeur de l'écran */
         height: 100px;
@@ -585,11 +633,11 @@ main section section p span {
         /* Limite la largeur maximale de la vidéo */
     }
 
-    #main_section_1 {
+    #index_section_texte {
         width: 100%;
     }
 
-    #main_section_2 {
+    #guide_section_texte {
         width: 100%;
         /*la section prend 100% de la hauteur totale*/
     }
@@ -600,7 +648,6 @@ main section section p span {
         /*ne pas afficher l'image */
     }
     
-
     #main_p {
         line-height: 120%;
         /*augmente la hauteur de ligne pour améliorer la lisibilité */
