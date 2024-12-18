@@ -226,7 +226,7 @@ header {
     margin-right: 5%;
 }
 
-#section1_a_propos {
+#apropos_section {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments dans la section */
     flex-direction: row;
@@ -253,7 +253,7 @@ header {
     /* Hauteur de la section à 100% */
 }
 
-#index_section_texte {
+#section_texte {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
     flex-direction: column;
@@ -294,7 +294,7 @@ header {
 
 }
 
-#main_section_3 {
+#guide_section_video {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
     flex-direction: column;
@@ -312,6 +312,9 @@ header {
 
 }
 
+#section_titre {
+    padding-left: 2%;
+}
 
 #main_p {
     margin-left: 2%;
@@ -354,33 +357,8 @@ header {
     /* Marge de 20% en haut */
 }
 
-#main_div2 {
-    display: flex;
-    /* Utilisation de Flexbox pour organiser les éléments */
-    flex-direction: column;
-    /* Disposition des éléments en colonne */
-    border-radius: 10px;
-    /* Arrondit les coins de la div */
-    padding-left: 5px;
-    /* Padding de 5px à gauche */
-    padding-right: 5px;
-    /* Padding de 5px à droite */
-    font-size: x-large;
-    /* Taille de la police large */
-    text-align: center;
-    /* Centre le texte */
-    width: 5vh;
-    /* Largeur de 65% de la hauteur de la fenêtre */
-    height: 22vw;
-    /* Hauteur de 30% de la largeur de la fenêtre */
-    color: rgb(255, 255, 255);
-    /* Texte en blanc */
-    /*box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);*/
-    /* Ombre subtile autour de la div */
-    /*background-color: rgba(0, 0, 0, 0.658);*/
-}
 
-#main_div_av_img {
+#guid_section_video {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
     height: 15vw;
@@ -420,12 +398,16 @@ header {
 }
 
 #title_combat {
+    margin: 1%;
+}
+
+
+#title_section_h1 {
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
 
 }
-
 
 /* Mise en forme des éléments du corps : ------------------------------------------------------------*/
 
@@ -469,9 +451,6 @@ main section section p span {
     /* Rend l'image fixe */
 }
 
-#index_section_texte {
-    padding-left: 2%;
-}
 
 #index_body {
     background:
@@ -485,16 +464,28 @@ main section section p span {
     /* Rend l'image fixe */
 }
 
+#combats_body {
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.288), rgb(0, 0, 0)),
+        /* Ajoute un dégradé noir transparent sur l'image */
+        url('images/header.jpg');
+
+    background-position: center;
+    /* Positionne l'image au centre */
+    background-attachment: fixed;
+    /* Rend l'image fixe */
+    background-size: cover;
+}
+
+
+
 #body_a_propos {
 
-
     background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.486), rgb(0, 0, 0)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.486), rgb(0, 0, 0)),
         /* Ajoute un dégradé noir transparent sur l'image */
         url('images/header19.webp');
     
-
-   
     /* Positionne l'image au centre */
     background-attachment: fixed;
     /* Rend l'image fixe */
@@ -643,7 +634,7 @@ main section section p span {
     }
 
   
-    #main_div_av_img {
+    #guid_section_video {
         display: none;
         /*ne pas afficher l'image */
     }
@@ -652,7 +643,7 @@ main section section p span {
         line-height: 120%;
         /*augmente la hauteur de ligne pour améliorer la lisibilité */
     }
-    #title_combat {
+    #title_section_h1 {
         font-size: 20px;
         /*taille des titres a 20px*/
     }
