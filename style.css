@@ -9,7 +9,6 @@
     /* Inclut la bordure et le padding dans la largeur et la hauteur des éléments */
     text-decoration: none;
     /* Enlève les soulignements des liens */
-    font-family: "EB Garamond", serif;
 
 }
 
@@ -23,8 +22,6 @@ a:visited {
 /*-------------------------------------------------------------------------------------------------------*/
 
 header {
-
-    font-family: "Permanent Marker", cursive;
     font-weight: 400;
     display: flex;
     /* Utilisation de Flexbox pour disposer les éléments de l'en-tête en ligne */
@@ -150,6 +147,7 @@ header {
 /* Sections pour les titres de page spécifiques : -------------------------------------------------------*/
 
 #body_header_h1 {
+    font-family: "Permanent Marker", cursive;
     /*background: red;*/
     /* Commenté, option pour fond rouge */
     display: flex;
@@ -158,7 +156,6 @@ header {
     /* Taille de la police définie à 80px */
     flex-direction: column;
     /* Organise les éléments en colonne */
-    font-family: "Permanent Marker", cursive;
 
 }
 
@@ -410,8 +407,6 @@ body main div {
     /* Utilisation de Flexbox pour disposer les éléments */
     justify-content: space-around;
     /* Espacement uniforme entre les éléments */
-    font-family: 'Poppins', 'serif';
-    /* Police personnalisée */
     align-items: center;
     /* Alignement vertical des éléments au centre */
 }
@@ -421,7 +416,7 @@ body main div {
 body header h1 span {
     color: rgba(184, 134, 11);
     /* Couleur dorée pour les éléments span dans les titres */
-    font-family: "Permanent Marker", cursive;
+    
 
 }
 
@@ -469,12 +464,14 @@ main section section p span {
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.486), rgb(0, 0, 0)),
         /* Ajoute un dégradé noir transparent sur l'image */
-        url('images/header.jpg');
+        url('images/header19.webp');
+    
 
-    background-position: center;
+   
     /* Positionne l'image au centre */
     background-attachment: fixed;
     /* Rend l'image fixe */
+    background-size: cover;
 
 }
 
