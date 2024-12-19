@@ -95,6 +95,8 @@ header {
     /* Ajoute un padding à gauche de 1% */
 }
 
+
+
 /* Header Image - Accueil ---------------------------------------------------------------------------------*/
 
 #index_header_img {
@@ -243,6 +245,25 @@ header {
 
 }
 
+
+#apropos_section_club {
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des éléments dans la section */
+    flex-direction: row;
+    /* Organise les éléments en ligne */
+    width: 90%;
+    /* Largeur de la section à 100% */
+    height: 70%;
+    /* Hauteur de la section à 100% */
+    background-color:  rgba(206, 21, 21, 0.658);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+}
+
+
 #section_video {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments dans la section */
@@ -316,8 +337,8 @@ header {
 }
 
 #main_p {
-    
-    margin-right: 1%;
+    padding-left: 2%;
+  
     text-align: justify;
     /* Justifie le texte dans les paragraphes */
     line-height: 200%;
@@ -341,19 +362,20 @@ header {
     padding-bottom: 5%;
 }
 
-#section_img {
+
+#section_carte {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des images */
     background-repeat: no-repeat;
     /* Empêche la répétition de l'image d'arrière-plan */
-    height: 90%;
+    height: 80%;
     /* Hauteur de l'image fixée à 80% */
-    width: 100%;
+    width: 65%;
     /* Largeur de l'image fixée à 90% */
-    margin-top: 10%;
-    /* Marge de 20% en haut */
-    margin-left: 2%;
-    padding-bottom: 5%;
+    margin-top: 2%;
+    /* Marge de 20% en haut */  
+    margin-left: 2%; 
+    margin-bottom: 2%; 
 }
 
 #guid_section_video {
@@ -423,8 +445,6 @@ body main div {
 body header h1 span {
     color: rgba(184, 134, 11);
     /* Couleur dorée pour les éléments span dans les titres */
-    
-
 }
 
 body header div a span {
@@ -740,10 +760,7 @@ main section section p span {
 
     
 
+    
+
 }
-
-
-
-
-
 
