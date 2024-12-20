@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     /* Supprime les marges par défaut */
@@ -9,7 +7,6 @@
     /* Inclut la bordure et le padding dans la largeur et la hauteur des éléments */
     text-decoration: none;
     /* Enlève les soulignements des liens */
-
 }
 
 
@@ -171,9 +168,6 @@ header {
 }
 
 
-
-
-
 /* Sections pour les titres de page spécifiques : -------------------------------------------------------*/
 
 #header_titre {
@@ -237,12 +231,11 @@ header {
     /* Largeur de la section à 100% */
     height: 80%;
     /* Hauteur de la section à 100% */
-    background-color:  rgba(0, 0, 0, 0.658);
+    background-color: rgba(0, 0, 0, 0.658);
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1%;
     margin-bottom: 2%;
-
 }
 
 
@@ -352,15 +345,31 @@ header {
     /* Utilisation de Flexbox pour la disposition des images */
     background-repeat: no-repeat;
     /* Empêche la répétition de l'image d'arrière-plan */
-    height: 90%;
+    height: 600px;
     /* Hauteur de l'image fixée à 80% */
-    width: 100%;
+    width: 500px;
     /* Largeur de l'image fixée à 90% */
-    margin-top: 10%;
+    margin-top: 5%;
     /* Marge de 20% en haut */
     margin-left: 2%;
     padding-bottom: 5%;
 }
+
+#guide_section_img {
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des images */
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image d'arrière-plan */
+    height: 550px;
+    /* Hauteur de l'image fixée à 80% */
+    width: 475px;
+    /* Largeur de l'image fixée à 90% */
+    margin-top: 10%;
+    /* Marge de 20% en haut */
+    margin-left: 0%;
+    padding-bottom: 5%;
+}
+
 
 #section_texte {
     display: flex;
@@ -391,11 +400,11 @@ header {
 #section_carte {
     display: flex;
     /* Utilisation de Flexbox pour la disposition des éléments */
-    flex-direction: column;
     /* Organise les éléments en colonne */
     /* La section prend 80% de la hauteur */
     /* Marge de 5% en haut */
     padding-top: 2%;
+    padding-bottom: 2%;
     /* Padding de 5% en haut */
     font-size: x-large;
     /* Taille de police large */
@@ -601,6 +610,11 @@ main section section p span {
     #section_img {
         display: none;
         /*ne pas afficher l'image */
+    }
+
+    #header_soustitre {
+        font-size: 15px;
+        font-family: "Exo 2", serif;
     }
     /*index----------------------------------------------------*/
 
@@ -821,7 +835,7 @@ main section section p span {
         /*espace entre la section et la droite de la page*/
     }
 
-    #_section_img {
+    #section_img {
         display: none;
         /*ne pas afficher l'image */
     }
@@ -1147,6 +1161,37 @@ main section section p span {
         /*espace entre la section et la droite de la page*/
 
     }
+
+    #section_img {
+        display: flex;
+        /* Utilisation de Flexbox pour la disposition des images */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image d'arrière-plan */
+        height: 400px;
+        /* Hauteur de l'image fixée à 80% */
+        width: 300px;
+        /* Largeur de l'image fixée à 90% */
+        margin-top: 5%;
+        /* Marge de 20% en haut */
+        margin-left: 2%;
+        padding-bottom: 5%;
+    }
+
+    #guide_section_img {
+    display: flex;
+    /* Utilisation de Flexbox pour la disposition des images */
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image d'arrière-plan */
+    height: 350px;
+    /* Hauteur de l'image fixée à 80% */
+    width: 275px;
+    /* Largeur de l'image fixée à 90% */
+    margin-top: 10%;
+    /* Marge de 20% en haut */
+    margin-left: 0%;
+    padding-bottom: 5%;
+}
+
 
     #section_vidéo iframe {
         width: 90%;
